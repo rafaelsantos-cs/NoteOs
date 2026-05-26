@@ -1,0 +1,10 @@
+NAME="NoteOs"
+PRETTY_NAME="NoteOs Alpha"
+ID=noteos
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="1;36"
+HOME_URL="https://github.com/rafaelsantos-cs/NoteOs"
+DOCUMENTATION_URL="https://github.com/rafaelsantos-cs/NoteOs/tree/main/docs"
+BUG_REPORT_URL="https://github.com/rafaelsantos-cs/NoteOs/issues"
+LOGO=noteos

@@ -126,3 +126,20 @@ xdg-utils
 xfsprogs
 xl2tpd
 zsh
+
+# NoteOs hardware/support stack
+mesa
+vulkan-intel
+intel-media-driver
+libva-utils
+pipewire
+pipewire-alsa
+pipewire-pulse
+wireplumber
+networkmanager
+tlp
+thermald
+powertop
+fwupd
+inxi
+fastfetch
