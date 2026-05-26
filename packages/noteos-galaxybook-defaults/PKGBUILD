@@ -1,0 +1,16 @@
+# Maintainer: Rafael Alves <rafael1020alvessantos@gmail.com>
+pkgname=noteos-galaxybook-defaults
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Galaxy Book2 defaults for NoteOs"
+arch=('any')
+url="https://github.com/rafael1020alvessantos/NoteOs"
+license=('MIT')
+depends=('tlp' 'thermald')
+source=('tlp-noteos.conf' 'noteos-galaxybook-info.sh')
+sha256sums=('SKIP' 'SKIP')
+
+package() {
+  install -Dm644 "$srcdir/tlp-noteos.conf" "$pkgdir/etc/tlp.d/90-noteos-galaxybook.conf"
+  install -Dm755 "$srcdir/noteos-galaxybook-info.sh" "$pkgdir/usr/bin/noteos-galaxybook-info"
+}

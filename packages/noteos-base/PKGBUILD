@@ -1,0 +1,30 @@
+# Maintainer: Rafael Alves <rafael1020alvessantos@gmail.com>
+pkgname=noteos-base
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Base metapackage for NoteOs"
+arch=('any')
+url="https://github.com/rafael1020alvessantos/NoteOs"
+license=('MIT')
+depends=(
+  'base'
+  'linux'
+  'linux-firmware'
+  'intel-ucode'
+  'networkmanager'
+  'pipewire'
+  'pipewire-pulse'
+  'wireplumber'
+  'sof-firmware'
+  'mesa'
+  'vulkan-intel'
+  'intel-media-driver'
+  'thermald'
+  'tlp'
+  'btrfs-progs'
+  'snapper'
+)
+package() {
+  mkdir -p "$pkgdir/usr/share/noteos"
+  echo "NoteOs base metapackage" > "$pkgdir/usr/share/noteos/base.txt"
+}

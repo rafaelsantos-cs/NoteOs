@@ -1,0 +1,9 @@
+out/
+work/
+*.iso
+*.pkg.tar.zst
+*.pkg.tar.zst.sig
+pkg/
+src/
+*.log
+.DS_Store

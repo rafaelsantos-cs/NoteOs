@@ -1,0 +1,9 @@
+NAME="NoteOs"
+PRETTY_NAME="NoteOs Linux"
+ID=noteos
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="1;36"
+HOME_URL="https://github.com/rafael1020alvessantos/NoteOs"
+DOCUMENTATION_URL="https://github.com/rafael1020alvessantos/NoteOs/tree/main/docs"
+BUG_REPORT_URL="https://github.com/rafael1020alvessantos/NoteOs/issues"

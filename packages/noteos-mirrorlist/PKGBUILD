@@ -1,0 +1,14 @@
+# Maintainer: Rafael Alves <rafael1020alvessantos@gmail.com>
+pkgname=noteos-mirrorlist
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Mirrorlist for NoteOs repositories"
+arch=('any')
+url="https://github.com/rafael1020alvessantos/NoteOs"
+license=('MIT')
+source=('mirrorlist')
+sha256sums=('SKIP')
+
+package() {
+  install -Dm644 "$srcdir/mirrorlist" "$pkgdir/etc/pacman.d/noteos-mirrorlist"
+}

@@ -1,0 +1,14 @@
+# Maintainer: Rafael Alves <rafael1020alvessantos@gmail.com>
+pkgname=noteos-branding
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Branding files for NoteOs"
+arch=('any')
+url="https://github.com/rafael1020alvessantos/NoteOs"
+license=('MIT')
+source=('os-release')
+sha256sums=('SKIP')
+
+package() {
+  install -Dm644 "$srcdir/os-release" "$pkgdir/usr/lib/os-release"
+}
